@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-col {
+    /* flex: 1; */
+    width: 605px;
+    height: 955px;
+    background-color: white;
+}
+
+.right-col {
+    /* flex:1; */
+    width: 1125px;
+    height: 960px;
+    background: #440099;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.ad-container {
+    width: 1124px;
+    height: 400px;
+    padding-top: 250px;
+    padding-left: 240px;
+}
+
+.en {
+    display: flex;
+    position: absolute;
+    bottom: -5px;
+    right: 355px;
+}
