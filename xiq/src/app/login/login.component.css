@@ -16,6 +16,7 @@
     width: 1125px;
     height: 960px;
     background: #440099;
+    opacity: .82;
 }
 
 img {
@@ -33,5 +34,12 @@ img {
     display: flex;
     position: absolute;
     bottom: -5px;
-    right: 355px;
+    right: 365px;
+}
+
+.left-col-content {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 80px;
 }
