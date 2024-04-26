@@ -16,7 +16,7 @@
     width: 1125px;
     height: 960px;
     background: #440099;
-    opacity: .82;
+    opacity: 1.1;
 }
 
 img {
@@ -42,4 +42,81 @@ img {
     position: absolute;
     left: 100px;
     top: 80px;
+}
+
+
+form {
+    display: block;
+}
+
+.login-form {
+    margin: auto;
+    width: 280px;
+    padding-top: 400px;
+}
+
+/* .email-label, .password-label {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.email-label.active, .password-label.active {
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    color: #555;
+} */
+
+.login-form {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.login-form input[type="email"], .login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    color: #440099;
+}
+
+.login-form input[type="submit"] {
+    background-color: #007e91;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.login-form span {
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0.5;
+    padding-top: 22px;
+}
+
+.login-form span.active {
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    color: #555;
+}
+
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.forgot-password {
+    position: absolute;
+    left: 175px;
 }
