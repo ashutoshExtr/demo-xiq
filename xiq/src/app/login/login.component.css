@@ -88,8 +88,8 @@ form {
 .login-form input[type="submit"] {
     background-color: #007e91;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 10px 13px;
+    margin: 12px 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -117,6 +117,7 @@ a{
 
 
 .forgot-password {
-    position: absolute;
+    position: relative;
     left: 175px;
+    top: 10px;
 }
