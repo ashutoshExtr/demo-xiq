@@ -71,6 +71,7 @@ form {
     position: relative;
     max-width: 300px;
     margin: auto;
+    bottom: 90px;
 }
 
 .login-form input[type="email"], .login-form input[type="password"] {
@@ -83,23 +84,24 @@ form {
     box-sizing: border-box;
     outline: none;
     color: #440099;
+    margin-top: 20px;
 }
 
 .login-form input[type="submit"] {
     background-color: #007e91;
     color: white;
     padding: 10px 13px;
-    margin: 12px 0;
+    margin: 27px 0;
     border: none;
     cursor: pointer;
     width: 100%;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .login-form span {
     position: absolute;
     transition: 0.5s;
-    opacity: 0.5;
+    opacity: 1.0;
     padding-top: 22px;
 }
 
@@ -118,6 +120,64 @@ a{
 
 .forgot-password {
     position: relative;
-    left: 175px;
-    top: 10px;
+    left: 180px;
+    top: -35px;
+    font-size: 13px;
+    margin: 10px auto;
+    color: #333333;
+}
+
+
+.cblue {
+    color: #007e91;
+    margin-left: 11px;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+    min-width: 550px;
+    color: #989898;
+    font-size: 10px;
+    text-align: start;
+}
+
+.service-iso {
+    display: inline-block;
+    margin-left: 12.5%;
+    position: relative;
+    left: 20px;
+}
+
+.page-footer.service-iso.show-iso {
+    margin-right: 10px;
+}
+
+.page-footer.service-iso.service-availability {
+    margin-left: 10px;
+}
+.copyright {
+    position: relative;
+    left: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+}
+
+#iso-cert {
+    position: absolute; 
+    left: -150px; 
+    bottom: -6px;
+    font-size: 12px;
+}
+
+#serv-avai {
+    position: absolute; 
+    left: -10px; 
+    bottom: -6px;
+    font-size: 12px;
 }

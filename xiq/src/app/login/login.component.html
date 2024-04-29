@@ -16,18 +16,34 @@
             </form>
         </div> -->
             <form [formGroup]="loginForm" class="login-form">
-                <span class="email-label" [class.active]="emailActive">Email</span>
+                <span class="email-label" [class.active]="emailActive  || loginForm.controls.username.value">Email</span>
                 <input type="email" formControlName="username" class="email-text" autocapitalize="none" (focus)="emailActive=true" (blur)="emailActive=false">
                 <br>
-                <span class="password-label" [class.active]="passwordActive">Password</span>
+                <span class="password-label" [class.active]="passwordActive  || loginForm.controls.password.value">Password</span>
                 <input type="password" formControlName="password" class="password-text" (focus)="passwordActive=true" (blur)="passwordActive=false">
                 <br>
                 <input type="submit" value="LOGIN" class="login-button">
                 <br>
             </form>
-            <span class="forgot-password">Forgot your password? <a href="#/">Reset it here</a></span>
+            <span class="forgot-password">Forgot your password? <a href="#/" class="cblue">Reset it here</a></span>
             <br>
-            <span class="forgot-password">Don't have an account? <a href="https://www.extremenetworks.com/cloud-networking/" target="_blank">Register here</a></span>
+            <span class="forgot-password">Don't have an account? <a href="https://www.extremenetworks.com/cloud-networking/" target="_blank" class="cblue">Register here</a></span>
+
+
+            <div class="page-footer">
+                <div class="copyright">
+                    © 2024 Extreme Networks - All Rights Reserved. 
+                    <div class="service-iso">
+                        <div class="show-iso">
+                            <a href="javascript:void(0);" class="cblue" id="iso-cert">ISO 27001 Certificate  | </a>
+                        </div>
+
+                        <div class="service-availability">
+                            <a href="https://cloud-status.extremecloudiq.com/status/index.html" target="_blank" class="cblue" id="serv-avai">Service Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
     <div class="right-col">
