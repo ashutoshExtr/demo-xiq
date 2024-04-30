@@ -35,6 +35,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -98,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "xiq:build:production",
+              "serveTarget": "xiq:serve:production"
+            },
+            "development": {
+              "buildTarget": "xiq:build:development",
+              "serveTarget": "xiq:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
