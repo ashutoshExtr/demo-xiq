@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Authservice } from './auth.service';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { XiqNavComponent } from './xiq-nav/xiq-nav.component';
 // import { AngularFireModule } from '@angular/fire';
 // import { AngularFireStore } from '@angular/fire/firestore';
  
@@ -15,6 +17,7 @@ import { Authservice } from './auth.service';
   declarations: [
     AppComponent,
     LoginComponent,
+    XiqNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,7 @@ import { Authservice } from './auth.service';
     ReactiveFormsModule,
     
   ],
-  providers: [Authservice],
+  providers: [Authservice, provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
