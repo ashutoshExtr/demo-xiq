@@ -1,0 +1,14 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+.sidenav {
+    width: 70px;
+    background: linear-gradient(125deg, #0e80cb 0, #0e80cb 10%, #409 100%, #409 100%);
+}
+  
+.nav-list img {
+     /* Style for images/icons */
+     width: 100%;
+}
+  

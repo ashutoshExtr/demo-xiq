@@ -10,8 +10,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { XiqNavComponent } from './xiq-nav/xiq-nav.component';
 // import { AngularFireModule } from '@angular/fire';
 // import { AngularFireStore } from '@angular/fire/firestore';
- 
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { XiqNavComponent } from './xiq-nav/xiq-nav.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [Authservice, provideAnimationsAsync()],
   bootstrap: [AppComponent]

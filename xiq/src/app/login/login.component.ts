@@ -26,7 +26,7 @@ export class LoginComponent {
     password = password || '';
     
     if (this.authservice.validateUser(username, password)) {
-      this.router.navigate(['/manage']);
+      this.router.navigate(['/nav']);
       console.log(username, password);
       
     } else {

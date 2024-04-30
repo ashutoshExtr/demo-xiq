@@ -1,1 +1,35 @@
-<p>xiq-nav works!</p>
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav class="sidenav" mode="side" opened>
+      <div class="nav-list">
+        <mat-nav-list>
+          <!-- Repeat this block for each item -->
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/co-pilot.svg" width="44px" height="44px">
+          </a>
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/configure.svg" alt="icon description" width="44px" height="44px">
+          </a>
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/manage.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/insights.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/essentials.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/A3.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="/your-link-here">
+            <img src="assets/images/help.svg" alt="icon description">
+          </a>
+        </mat-nav-list>
+      </div>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <!-- Main content goes here -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
