@@ -15,7 +15,7 @@
                 <br>
             </form>
         </div> -->
-            <form [formGroup]="loginForm" class="login-form">
+            <form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
                 <span class="email-label" [class.active]="emailActive  || loginForm.controls.username.value">Email</span>
                 <input type="email" formControlName="username" class="email-text" autocapitalize="none" (focus)="emailActive=true" (blur)="emailActive=false">
                 <br>
@@ -51,7 +51,7 @@
             <img src="https://cloud-status.extremecloudiq.com/communications/banner/banner.svg" width="700px" height="400px">
         </div>
         <div class="en">
-            <img src="/assets/images/en.png" width="300px" height="45px">
+            <img src="/assets/images/en.png" width="250px" height="40px">
         </div>
     </div>
 </div>

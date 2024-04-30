@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "xiq",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

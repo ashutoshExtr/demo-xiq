@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-xiq": {
+      "hosting": {
+        "xiq": [
+          "fir-xiq"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-xiq"
+  }
+}

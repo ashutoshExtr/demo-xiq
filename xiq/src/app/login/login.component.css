@@ -7,15 +7,15 @@
 .left-col {
     /* flex: 1; */
     width: 605px;
-    height: 955px;
-    background-color: white;
+    height: 960px;
+    background-color: #212130;
 }
 
 .right-col {
     /* flex:1; */
     width: 1125px;
     height: 960px;
-    background: #440099;
+    background:  #260056; /* #440099; */
     opacity: 1.1;
 }
 
@@ -108,7 +108,7 @@ form {
 .login-form span.active {
     transform: translateY(-20px);
     font-size: 0.8em;
-    color: #555;
+    color: #ffffff; /* #555 */
 }
 
 
@@ -124,12 +124,12 @@ a{
     top: -35px;
     font-size: 13px;
     margin: 10px auto;
-    color: #333333;
+    color: #ffffff;  /*  #333333 */
 }
 
 
 .cblue {
-    color: #007e91;
+    color: #00ddff;  /*  #007e91 */
     margin-left: 11px;
 }
 
@@ -139,7 +139,7 @@ a{
     display: block;
     width: 100%;
     min-width: 550px;
-    color: #989898;
+    color: #ffffff;  /* #989898 */
     font-size: 10px;
     text-align: start;
 }
