@@ -24,13 +24,15 @@ export class LoginComponent {
 
     username = username || '';
     password = password || '';
-    
+
     if (this.authservice.validateUser(username, password)) {
-      this.router.navigate(['/nav']);
+      this.router.navigate(['/copilot']);
       console.log(username, password);
-      
-    } else {
+    } 
+    else {
       console.log('Invalid credentials');
     }
   }
+
+  
 }

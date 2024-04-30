@@ -12,12 +12,24 @@ import { XiqNavComponent } from './xiq-nav/xiq-nav.component';
 // import { AngularFireStore } from '@angular/fire/firestore';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { CopilotComponent } from './copilot/copilot.component';
+import { ConfigureComponent } from './configure/configure.component';
+import { ManageComponent } from './manage/manage.component';
+import { MlInsightsComponent } from './ml-insights/ml-insights.component';
+import { EssentialsComponent } from './essentials/essentials.component';
+import { A3Component } from './a3/a3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     XiqNavComponent,
+    CopilotComponent,
+    ConfigureComponent,
+    ManageComponent,
+    MlInsightsComponent,
+    EssentialsComponent,
+    A3Component,
   ],
   imports: [
     BrowserModule,

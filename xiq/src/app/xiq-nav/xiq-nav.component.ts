@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-xiq-nav',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class XiqNavComponent {
 
+  @ViewChild('sidenav') sidenav!: MatSidenav;
+
+  constructor(private router: Router) {}
+
+  navigateTo(route: string) {
+    this.router.navigate([route]);
+    this.sidenav.open();
+  }
 }
