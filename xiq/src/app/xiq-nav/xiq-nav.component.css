@@ -3,12 +3,29 @@
   }
   
 .sidenav {
-    width: 70px;
+    width: 60px;
     background: linear-gradient(125deg, #0e80cb 0, #0e80cb 10%, #409 100%, #409 100%);
 }
   
-.nav-list img {
-     /* Style for images/icons */
-     width: 100%;
+.help {
+    position: relative;
+    top: 580px;
 }
-  
+
+.chevron-right {
+    position: relative;
+    top: 600px;
+    color: #ffffff;
+}
+
+.nav-list img:not(.pilot) {
+    width: 100%;
+    filter: invert(1);
+}
+
+.pilot {
+    width: 30px; 
+    height: 35px;
+    background: url('/assets/images/pilot.svg') no-repeat center;
+    background-size: contain;
+}
