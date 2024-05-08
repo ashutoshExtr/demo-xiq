@@ -1,0 +1,22 @@
+<svg id="pilot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.5" x2="0.5" y2="0.993" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#22c4de"/>
+      <stop offset="1" stop-color="#0e80cb"/>
+    </linearGradient>
+  </defs>
+  <g id="Page-1">
+    <g id="Global-Nav-Personas">
+      <g id="Global-Nav-_-PILOT" data-name="Global-Nav-/-PILOT">
+        <rect id="Rectangle" width="35" height="35" rx="3" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+  <g id="Page-1-2" data-name="Page-1" transform="translate(3.519 12)">
+    <g id="Global-Nav-_-PILOT-2" data-name="Global-Nav-/-PILOT">
+      <g id="Group-3">
+        <path id="Fill-1" d="M15.561,2.388a1.591,1.591,0,0,0-1.346-.819c-.014,0-.027.006-.041.006s-.027-.006-.042-.006a1.59,1.59,0,0,0-1.346.819,2.313,2.313,0,0,0-1.3-1.694h5.383a2.312,2.312,0,0,0-1.3,1.694M21.812,0c-.3,0-.578,0-.849.01V0H7.385V.01C7.113,0,6.834,0,6.536,0,3.315,0,0,.572,0,5.185,0,8.277,1.507,12,5.482,12c4.276,0,7.413-5.434,7.413-8.445,0-.043,0-.083,0-.126a1.362,1.362,0,0,1,1.241-1.412c.014,0,.027,0,.042,0s.027,0,.041,0a1.362,1.362,0,0,1,1.241,1.412c0,.043,0,.083,0,.126,0,3.011,3.137,8.445,7.413,8.445,3.975,0,5.482-3.723,5.482-6.815C28.348.572,25.033,0,21.812,0" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

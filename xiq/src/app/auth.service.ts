@@ -6,6 +6,9 @@ import { Injectable } from "@angular/core";
     providedIn: "root"
 })
 export class Authservice {
+
+    private loggedIn = false;
+
     private users = [
         {username: 'user1@gmail.com', password: 'pass1'},
         {username: 'user2@gmail.com', password: 'pass2'},
@@ -14,6 +17,16 @@ export class Authservice {
       ];
     
     validateUser(username: string, password: string): boolean {
-        return this.users.some(user => user.username === username && user.password === password);
+        const isValidUser = this.users.some(user => user.username === username && user.password === password);
+
+        if (isValidUser) {
+            this.loggedIn = true;
+        }
+        
+        return isValidUser;
+    }
+
+    isLoggedIn(): boolean {
+        return this.loggedIn;
     }
 }

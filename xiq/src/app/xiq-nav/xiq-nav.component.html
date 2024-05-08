@@ -1,1 +1,42 @@
-<p>xiq-nav works!</p>
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav class="sidenav" mode="side" opened>
+      <div class="nav-list">
+        <mat-nav-list>
+          <!-- Repeat this block for each item -->
+          <a mat-list-item>
+            <div class="pilot"></div>
+          </a>
+          <a mat-list-item (click)="navigateTo('copilot')">
+            <img src="assets/images/co-pilot.svg" width="44px" height="44px">
+          </a>
+          <a mat-list-item routerLink="configure" [routerLinkActive]="'activeURL'">
+            <img src="assets/images/configure.svg" alt="icon description" width="44px" height="44px">
+            <!-- <h2>Configure</h2> -->
+          </a>
+          <a mat-list-item routerLink="manage">
+            <img src="assets/images/manage.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="insights">
+            <img src="assets/images/insights.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="essentials">
+            <img src="assets/images/essentials.svg" alt="icon description">
+          </a>
+          <a mat-list-item routerLink="a3">
+            <img src="assets/images/A3.svg" alt="icon description">
+          </a>
+          <a mat-list-item class="help">
+            <img src="assets/images/help.svg" alt="icon description" >
+          </a>
+          <a mat-list-item class="chevron-right">
+            <img src="assets/images/chevron.png" width="38px" height="35px">
+          </a>
+        </mat-nav-list>
+      </div>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+    
+    </mat-sidenav-content>
+  </mat-sidenav-container>
