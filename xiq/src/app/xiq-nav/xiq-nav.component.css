@@ -5,6 +5,8 @@
 .sidenav {
     width: 60px;
     background: linear-gradient(125deg, #0e80cb 0, #0e80cb 10%, #409 100%, #409 100%);
+    z-index: 9999;
+    position: fixed;
 }
   
 .help {
@@ -17,6 +19,16 @@
     top: 420px;
     color: #ffffff;
 }
+/* .help {
+    margin-top: auto; 
+    margin-left: auto; 
+}
+
+.chevron-right {
+    margin-top: auto; 
+    margin-left: auto; 
+    color: #ffffff;
+} */
 
 .nav-list img:not(.pilot) {
     width: 100%;
@@ -29,3 +41,9 @@
     background: url('/assets/images/pilot.svg') no-repeat center;
     background-size: contain;
 }
+
+@media only screen and (max-width: 600px) {
+    .sidenav {
+      width: 100%;
+    }
+} 

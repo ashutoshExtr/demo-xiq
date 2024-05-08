@@ -1,2 +1,18 @@
-<app-xiq-nav *ngIf="authservice.isLoggedIn()"></app-xiq-nav>
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-xiq-nav *ngIf="authservice.isLoggedIn()"></app-xiq-nav>
+
+<router-outlet></router-outlet> -->
+<!-- <app-login></app-login> -->
+
+
+<!-- <div *ngIf="authservice.isLoggedIn()">
+    <app-xiq-nav></app-xiq-nav>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+</div>
+<app-login *ngIf="!authservice.isLoggedIn()"></app-login> -->
+
 <router-outlet></router-outlet>
+<app-xiq-nav *ngIf="authservice.isLoggedIn()"></app-xiq-nav>
+<!-- <router-outlet></router-outlet> -->
