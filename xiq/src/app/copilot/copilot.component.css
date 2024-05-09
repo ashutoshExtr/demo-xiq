@@ -26,6 +26,7 @@
     align-self: center;
     margin-right: 4vw;
     margin-top: -35px;
+    margin-left: 30vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,4 +37,58 @@
       margin-left: 0;
       max-width: 100%;
     }
+}
+
+.promo-detail h1 {
+    font-family: "NotoSans" !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+    margin: 10px 20px;
+    line-height: 28px !important;
+    color: #222d42;
+}
+
+.promo-detail ul {
+    margin: 35px 0;
+    text-align: left;
+}
+
+.promo-detail ul li {
+    font-family: 'NotoSans' !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.02em;
+    color: #61728f;
+}
+
+.btn-copilot {
+    background: #007e91;
+    /* border: none !important;
+    background-color: transparent !important;
+    font-weight: 600;
+    text-decoration: unset !important; */
+    margin-right: 20px;
+}
+
+.promo-detail a {
+    font-family: 'NotoSans' !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #007e91;
+    text-decoration-line: none;
+}
+
+.promo-detail p.contact-sales {
+    font-family: 'NotoSans' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    color: #222d42;
+    margin: 25px 0 0;
 }

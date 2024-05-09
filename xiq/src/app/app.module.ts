@@ -18,6 +18,9 @@ import { ManageComponent } from './manage/manage.component';
 import { MlInsightsComponent } from './ml-insights/ml-insights.component';
 import { EssentialsComponent } from './essentials/essentials.component';
 import { A3Component } from './a3/a3.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { A3Component } from './a3/a3.component';
     ReactiveFormsModule,
     MatSidenavModule,
     MatListModule,
+    MatIconModule,
+    MatDividerModule,
+    MatButtonModule
   ],
   providers: [Authservice, provideAnimationsAsync()],
   bootstrap: [AppComponent]

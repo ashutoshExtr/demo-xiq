@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class CopilotComponent {
 
+  items = [
+    'Reducing risk of widespread operational issues',
+    'Reducing amount of false positive alarms',
+    'Enhancing trust with Explainable ML / AI'
+  ];
+
+  
 }
