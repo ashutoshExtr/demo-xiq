@@ -21,6 +21,7 @@ import { A3Component } from './a3/a3.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import { SidebarComponent } from './copilot/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {MatButtonModule} from '@angular/material/button';
     MlInsightsComponent,
     EssentialsComponent,
     A3Component,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

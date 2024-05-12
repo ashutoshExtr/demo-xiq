@@ -13,5 +13,11 @@ export class CopilotComponent {
     'Enhancing trust with Explainable ML / AI'
   ];
 
-  
+
+  showSidebar = false;
+
+  toggleSidebar() {
+    this.showSidebar = !this.showSidebar;
+  }
+
 }

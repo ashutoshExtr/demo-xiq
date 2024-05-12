@@ -92,3 +92,11 @@
     color: #222d42;
     margin: 25px 0 0;
 }
+
+
+.sidebartoggle {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background: url(/assets/images/chevron.png);
+}

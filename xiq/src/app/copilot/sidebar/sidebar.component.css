@@ -1,0 +1,138 @@
+.network-type-main {
+    height: 100%;
+}
+
+.welcome-banner-ctn {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.network-type-main .welcome-banner-ctn{
+    margin-bottom: 80px;
+}
+
+.welcome-banner-content {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.network-type-main .network-type-ctn{
+    margin-top: 30px;
+}
+
+.network-type-main .network-type-ctn .network-type {
+    width: 95%;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first {
+    margin-left: 0;
+}
+
+.column {
+    display: inline;
+    float: left;
+}
+.grid_2 {
+    width: 104px;
+}
+
+.cloud-icon {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    /* background: url(''); */
+    background-repeat: no-repeat;
+}
+
+.network-type-main .network-type-ctn .network-type .network-text {
+    width: 60%;
+    margin-left: 25px;
+}
+
+label {
+    display: block;
+}
+
+
+.network-type-main .network-type-ctn .network-type .radio {
+    margin-bottom: 10px;
+    margin-left: -25px;
+}
+
+label.radio {
+    position: relative;
+}
+
+input[type=radio] {
+    position: absolute;
+    z-index: 12;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+input[type=radio]+.lbl {
+    position: relative;
+    z-index: 11;
+    display: inline-block;
+    min-width: 14px;
+    min-height: 14px;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Noto sans';
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.network-type-main .local-icon {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    /* background: url(); */
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #007e91;
+}
+
+.help-ctn {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 40px;
+}
+
+.help-ctn .help-content {
+    width: 85%;
+}
+
+h5 {
+    position: relative;
+    letter-spacing: .5px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+
+.sidebar-container {
+    background-color: white;
+}
