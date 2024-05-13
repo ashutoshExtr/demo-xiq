@@ -1,40 +1,153 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.promo-page {
+    background: #e4e8f3;
     height: 100vh;
-    margin: 0;
-    background-color: #f3f3f3;
-    font-family: 'Arial', sans-serif;
-}
-
-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    z-index: 1 !important;
+    margin-left: 60px;
 }
 
-input[type="text"] {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
+.promo-photo {
+    align-items: center;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 2vw;
+    max-width: 480px;
 }
 
-input[type="submit"] {
-    margin: 10px 0;
-    padding: 10px;
+.promo-detail {
+    background: #ffffff;
+    width: 520px;
+    padding: 30px;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    margin-right: 4vw;
+    margin-top: -35px;
+    margin-left: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .promo-page {
+      flex-direction: column;
+    }
+    .promo-photo, .promo-detail {
+      margin-left: 0;
+      max-width: 100%;
+    }
+}
+
+.promo-detail h1 {
+    font-family: "NotoSans" !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+    margin: 10px 20px;
+    line-height: 28px !important;
+    color: #222d42;
+}
+
+.promo-detail ul {
+    margin: 35px 0;
+    text-align: left;
+}
+
+.promo-detail ul li {
+    font-family: 'NotoSans' !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.02em;
+    color: #61728f;
+}
+
+.btn-copilot {
+    background: #007e91;
+    /* border: none !important;
+    background-color: transparent !important;
+    font-weight: 600;
+    text-decoration: unset !important; */
+    margin-right: 20px;
+}
+
+.promo-detail a {
+    font-family: 'NotoSans' !important;
+    font-style: normal;
+    font-weight: 600;
     font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
+    line-height: 18px;
+    color: #007e91;
+    text-decoration-line: none;
+}
+
+.promo-detail p.contact-sales {
+    font-family: 'NotoSans' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    color: #222d42;
+    margin: 25px 0 0;
+}
+
+
+/* .sidebartoggle {
+    filter: invert(1);
+    position: fixed;
+    right: 4px;
+    top: 50%;
+    background: url(/assets/images/chevron.png);
+    width: 50px;
+    height: 62px;
     border: none;
-    cursor: pointer;
+    background-size: 31px 29px;
+    background-repeat: no-repeat;
+    background-color: #007e91 !important;
+    
+} */
+
+.sidebartoggle {
+    position: fixed;
+    right: 4px;
+    top: 50%;
+    width: 50px;
+    height: 62px;
+    border: none;
+    background-color: #007e91 !important;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    border-radius: 5px 0 0 5px;
+    transition: transform .3s ease-in-out;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+.sidebartoggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/assets/images/chevron.png) no-repeat center center;
+    transform: rotate(180deg);
+    background-size: 31px 29px;
+    filter: invert(1);
+    /* transform: rotate(180deg); */
+    transition: transform .3s ease-in-out;
 }
 
-p {
-    text-align: justify;
-    margin: 20px 0;
+/* .rotated {
+    transform: rotate(180deg);
+} */
+
+.sidebartoggle.clicked {
+    transform: translateX(-488px);
+    position: fixed;
+    right: 117px;
+}
+
+.sidebartoggle.clicked::before {
+    transform: rotate(0deg);
 }

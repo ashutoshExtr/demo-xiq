@@ -1,13 +1,16 @@
 
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav class="sidenav" mode="side" opened>
-      <div class="nav-list">
+      <div class="nav-list" *ngIf="authservice.isLoggedIn()">
         <mat-nav-list>
           <!-- Repeat this block for each item -->
           <a mat-list-item>
             <div class="pilot"></div>
           </a>
-          <a mat-list-item (click)="navigateTo('copilot')">
+          <!-- <a mat-list-item (click)="navigateTo('copilot')">
+            <img src="assets/images/co-pilot.svg" width="44px" height="44px">
+          </a> -->
+          <a mat-list-item routerLink="copilot" [routerLinkActive]="'activeURL'">
             <img src="assets/images/co-pilot.svg" width="44px" height="44px">
           </a>
           <a mat-list-item routerLink="configure" [routerLinkActive]="'activeURL'">

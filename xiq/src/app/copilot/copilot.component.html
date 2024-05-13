@@ -1,1 +1,28 @@
-<app-xiq-nav></app-xiq-nav>
+<div class="promo-page">
+    <div class="promo-photo">
+        <img src="assets/images/promo-copilot.png" width="520px" height="480px" style="max-width: 100%;">
+    </div>
+
+    <div class="promo-detail">
+        <div class="promo-details">
+            <h1 class="promo-title">Delivering Actionable Insights Using Explainable ML / AI</h1>
+            <ul style="margin-left: 20px;">
+                <li *ngFor="let item of items">{{ item}}</li>
+            </ul>
+            <div class="more-info">
+                <div class="more-info">
+                    <mat-divider></mat-divider>
+                    <button mat-flat-button class="btn-copilot" style="background: #007391; color: white;"> Enable CoPilot </button>
+                    <a routerLink="#" target="_blank">
+                        Learn More &nbsp;<img src="assets/images/learn.svg" width="18" height="12">
+                    </a>
+                </div>
+                <p class="contact-sales">
+                    <a routerLink="#" target="_blank" class="link-button-color">Contact Sales</a> to purchase the license.
+                </p>
+            </div>
+        </div>
+    </div>
+    <button (click)="toggleSidebar()" class="sidebartoggle" [class.rotated]="isRotated" [class.clicked]="isClicked"></button>
+    <app-sidebar *ngIf="showSidebar" [style.display]="showSidebar ? 'block' : 'none'"></app-sidebar>
+</div>
