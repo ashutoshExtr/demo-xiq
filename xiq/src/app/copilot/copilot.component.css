@@ -94,9 +94,60 @@
 }
 
 
-.sidebartoggle {
+/* .sidebartoggle {
+    filter: invert(1);
     position: fixed;
-    right: 0;
+    right: 4px;
     top: 50%;
     background: url(/assets/images/chevron.png);
+    width: 50px;
+    height: 62px;
+    border: none;
+    background-size: 31px 29px;
+    background-repeat: no-repeat;
+    background-color: #007e91 !important;
+    
+} */
+
+.sidebartoggle {
+    position: fixed;
+    right: 4px;
+    top: 50%;
+    width: 50px;
+    height: 62px;
+    border: none;
+    background-color: #007e91 !important;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    border-radius: 5px 0 0 5px;
+    transition: transform .3s ease-in-out;
+}
+
+.sidebartoggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/assets/images/chevron.png) no-repeat center center;
+    transform: rotate(180deg);
+    background-size: 31px 29px;
+    filter: invert(1);
+    /* transform: rotate(180deg); */
+    transition: transform .3s ease-in-out;
+}
+
+/* .rotated {
+    transform: rotate(180deg);
+} */
+
+.sidebartoggle.clicked {
+    transform: translateX(-488px);
+    position: fixed;
+    right: 117px;
+}
+
+.sidebartoggle.clicked::before {
+    transform: rotate(0deg);
 }

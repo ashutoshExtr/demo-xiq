@@ -23,6 +23,6 @@
             </div>
         </div>
     </div>
-    <button (click)="toggleSidebar()" class="sidebartoggle"></button>
+    <button (click)="toggleSidebar()" class="sidebartoggle" [class.rotated]="isRotated" [class.clicked]="isClicked"></button>
     <app-sidebar *ngIf="showSidebar"></app-sidebar>
 </div>

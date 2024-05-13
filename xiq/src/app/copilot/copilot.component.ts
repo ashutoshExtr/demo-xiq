@@ -15,9 +15,13 @@ export class CopilotComponent {
 
 
   showSidebar = false;
+  isRotated = false;
+  isClicked = false;
 
   toggleSidebar() {
     this.showSidebar = !this.showSidebar;
+    this.isRotated = !this.isRotated;
+    this.isClicked = !this.isClicked;
   }
 
 }
