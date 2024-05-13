@@ -136,4 +136,6 @@ h5 {
 
 .sidebar-container {
     background-color: white;
+    /* z-index: 10;
+    transition: all 0.5s ease; */
 }

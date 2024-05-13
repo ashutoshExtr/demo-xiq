@@ -24,5 +24,5 @@
         </div>
     </div>
     <button (click)="toggleSidebar()" class="sidebartoggle" [class.rotated]="isRotated" [class.clicked]="isClicked"></button>
-    <app-sidebar *ngIf="showSidebar"></app-sidebar>
+    <app-sidebar *ngIf="showSidebar" [style.display]="showSidebar ? 'block' : 'none'"></app-sidebar>
 </div>

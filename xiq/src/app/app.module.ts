@@ -22,6 +22,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { SidebarComponent } from './copilot/sidebar/sidebar.component';
+import { ConnectivityComponent } from './copilot/connectivity/connectivity.component';
+import { AnomaliesComponent } from './copilot/anomalies/anomalies.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { SidebarComponent } from './copilot/sidebar/sidebar.component';
     EssentialsComponent,
     A3Component,
     SidebarComponent,
+    ConnectivityComponent,
+    AnomaliesComponent,
   ],
   imports: [
     BrowserModule,
