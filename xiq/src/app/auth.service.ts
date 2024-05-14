@@ -21,6 +21,7 @@ export class Authservice {
 
         if (isValidUser) {
             this.loggedIn = true;
+            // localStorage.setItem('loggedIn', 'true');
         }
         
         return isValidUser;
@@ -28,5 +29,6 @@ export class Authservice {
 
     isLoggedIn(): boolean {
         return this.loggedIn;
+        // return localStorage.getItem('loggedIn') === 'true';
     }
 }

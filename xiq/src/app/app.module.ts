@@ -24,6 +24,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { SidebarComponent } from './copilot/sidebar/sidebar.component';
 import { ConnectivityComponent } from './copilot/connectivity/connectivity.component';
 import { AnomaliesComponent } from './copilot/anomalies/anomalies.component';
+import { InventoryComponent } from './a3/inventory/inventory.component';
+import { ReportingComponent } from './a3/reporting/reporting.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,8 @@ import { AnomaliesComponent } from './copilot/anomalies/anomalies.component';
     SidebarComponent,
     ConnectivityComponent,
     AnomaliesComponent,
+    InventoryComponent,
+    ReportingComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,8 @@ import { AnomaliesComponent } from './copilot/anomalies/anomalies.component';
     MatListModule,
     MatIconModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [Authservice, provideAnimationsAsync()],
   bootstrap: [AppComponent]
