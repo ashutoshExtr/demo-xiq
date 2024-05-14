@@ -11,6 +11,10 @@ import { EssentialsComponent } from './essentials/essentials.component';
 import { A3Component } from './a3/a3.component';
 import { InventoryComponent } from './a3/inventory/inventory.component';
 import { ReportingComponent } from './a3/reporting/reporting.component';
+import { IotEssentialsComponent } from './essentials/iot-essentials/iot-essentials.component';
+import { AirdefenseEssentialsComponent } from './essentials/airdefense-essentials/airdefense-essentials.component';
+import { GuestEssentialsComponent } from './essentials/guest-essentials/guest-essentials.component';
+import { LocationEssentialsComponent } from './essentials/location-essentials/location-essentials.component';
 
 const routes: Routes = [
   {
@@ -44,6 +48,12 @@ const routes: Routes = [
     path: 'essentials',
     component: EssentialsComponent,
     canActivate: [AuthGuard],
+    children: [
+      {  path: 'extremeiot',  component:  IotEssentialsComponent  },
+      {  path: 'airdefense',  component:  AirdefenseEssentialsComponent  },
+      {  path: 'guest',       component:  GuestEssentialsComponent    },
+      {  path: 'location',    component:  LocationEssentialsComponent},
+    ]
   },
   {
     path: 'a3',

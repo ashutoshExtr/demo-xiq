@@ -27,6 +27,10 @@ import { AnomaliesComponent } from './copilot/anomalies/anomalies.component';
 import { InventoryComponent } from './a3/inventory/inventory.component';
 import { ReportingComponent } from './a3/reporting/reporting.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { IotEssentialsComponent } from './essentials/iot-essentials/iot-essentials.component';
+import { AirdefenseEssentialsComponent } from './essentials/airdefense-essentials/airdefense-essentials.component';
+import { GuestEssentialsComponent } from './essentials/guest-essentials/guest-essentials.component';
+import { LocationEssentialsComponent } from './essentials/location-essentials/location-essentials.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +48,10 @@ import {MatMenuModule} from '@angular/material/menu';
     AnomaliesComponent,
     InventoryComponent,
     ReportingComponent,
+    IotEssentialsComponent,
+    AirdefenseEssentialsComponent,
+    GuestEssentialsComponent,
+    LocationEssentialsComponent,
   ],
   imports: [
     BrowserModule,
