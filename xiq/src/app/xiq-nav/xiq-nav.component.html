@@ -26,7 +26,14 @@
           <a mat-list-item routerLink="essentials">
             <img src="assets/images/essentials.svg" alt="icon description">
           </a>
-          <a mat-list-item routerLink="a3">
+          <!-- <mat-menu #subMenu="matMenu">
+            <button mat-menu-item routerLink="inventory">Inventory</button>
+            <button mat-menu-item routerLink="reporting">Reporting</button>
+          </mat-menu> -->
+          <!-- <a mat-list-item [matMenuTriggerFor]="subMenu">
+            <img src="assets/images/lock.svg" alt="icon description">
+          </a> -->
+          <a mat-list-item routerLink="a3"  (click)="subSidenav.toggle()">
             <img src="assets/images/A3.svg" alt="icon description">
           </a>
           <a mat-list-item class="help">
@@ -37,6 +44,15 @@
           </a>
         </mat-nav-list>
       </div>
+    </mat-sidenav>
+    <mat-sidenav #subSidenav class="sub-sidenav" mode="over">  <!-- style="position: fixed;left: 60px; width: 75px;" -->
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['a3/inventory']">Inventory</a>
+        <a mat-list-item [routerLink]="['a3/reporting']">Reporting</a>
+      </mat-nav-list>
+      <button mat-icon-button (click)="subSidenav.toggle()">
+        <mat-icon>arrow-downward</mat-icon>
+      </button>
     </mat-sidenav>
   
     <mat-sidenav-content>

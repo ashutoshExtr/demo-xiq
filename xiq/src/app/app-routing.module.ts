@@ -9,12 +9,10 @@ import { ManageComponent } from './manage/manage.component';
 import { MlInsightsComponent } from './ml-insights/ml-insights.component';
 import { EssentialsComponent } from './essentials/essentials.component';
 import { A3Component } from './a3/a3.component';
+import { InventoryComponent } from './a3/inventory/inventory.component';
+import { ReportingComponent } from './a3/reporting/reporting.component';
 
 const routes: Routes = [
-  { path: '', 
-    redirectTo: 'login', 
-    pathMatch: 'full'
-  },
   {
     path: 'login',
     component: LoginComponent
@@ -51,6 +49,20 @@ const routes: Routes = [
     path: 'a3',
     component: A3Component,
     canActivate: [AuthGuard],
+    children: [
+      {
+        path: 'inventory',
+        component: InventoryComponent,
+      },
+      {
+        path: 'reporting',
+        component: ReportingComponent,
+      },
+    ]
+  },
+  { path: '', 
+    redirectTo: 'login', 
+    pathMatch: 'full'
   },
 ];
 

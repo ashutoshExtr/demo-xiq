@@ -47,3 +47,17 @@
       width: 100%;
     }
 } 
+
+.sub-sidenav {
+    width: 160px;
+    background: white;
+    color: black;
+    position: absolute;
+    left: 60px;
+    top: 56px;
+}
+
+.sub-sidenav mat-icon {
+    position: absolute;
+    bottom: 0;
+}

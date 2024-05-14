@@ -1,0 +1,35 @@
+.container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+    margin-bottom: 20px;
+}
+
+.nginx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Times';
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 4%;
+}
+
+p {
+    font-family: 'Times';
+}
