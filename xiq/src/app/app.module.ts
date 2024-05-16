@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +31,7 @@ import { IotEssentialsComponent } from './essentials/iot-essentials/iot-essentia
 import { AirdefenseEssentialsComponent } from './essentials/airdefense-essentials/airdefense-essentials.component';
 import { GuestEssentialsComponent } from './essentials/guest-essentials/guest-essentials.component';
 import { LocationEssentialsComponent } from './essentials/location-essentials/location-essentials.component';
+import { ENModule } from 'en-angular';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { LocationEssentialsComponent } from './essentials/location-essentials/lo
     LocationEssentialsComponent,
   ],
   imports: [
+    ENModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
@@ -65,6 +67,7 @@ import { LocationEssentialsComponent } from './essentials/location-essentials/lo
     MatMenuModule,
   ],
   providers: [Authservice, provideAnimationsAsync()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
