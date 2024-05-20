@@ -3,7 +3,25 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "baseUrl": "./",
+    "paths": {
+      "@en-components/*": [
+        "node_modules/en-web-components/dist/en/components/*"
+      ],
+      "@en-calendar": [
+        "node_modules/en-web-components/dist/en/components/calendar/calendar"
+      ],
+      "@en-button": [
+        "node_modules/en-web-components/dist/en/components/button/button"
+      ],
+      "@en-checkbox": [
+        "node_modules/en-web-components/dist/en/components/checkbox/checkbox"
+      ],
+      "@en-checkbox-item": [
+        "node_modules/en-web-components/dist/en/components/checkbox-item/checkbox-item"
+      ],
+    }
   },
   "files": [
     "src/main.ts"

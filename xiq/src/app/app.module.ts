@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +27,11 @@ import { AnomaliesComponent } from './copilot/anomalies/anomalies.component';
 import { InventoryComponent } from './a3/inventory/inventory.component';
 import { ReportingComponent } from './a3/reporting/reporting.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { IotEssentialsComponent } from './essentials/iot-essentials/iot-essentials.component';
+import { AirdefenseEssentialsComponent } from './essentials/airdefense-essentials/airdefense-essentials.component';
+import { GuestEssentialsComponent } from './essentials/guest-essentials/guest-essentials.component';
+import { LocationEssentialsComponent } from './essentials/location-essentials/location-essentials.component';
+import { ENModule } from 'en-angular';
 
 @NgModule({
   declarations: [
@@ -44,8 +49,13 @@ import {MatMenuModule} from '@angular/material/menu';
     AnomaliesComponent,
     InventoryComponent,
     ReportingComponent,
+    IotEssentialsComponent,
+    AirdefenseEssentialsComponent,
+    GuestEssentialsComponent,
+    LocationEssentialsComponent,
   ],
   imports: [
+    ENModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
@@ -57,6 +67,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatMenuModule,
   ],
   providers: [Authservice, provideAnimationsAsync()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

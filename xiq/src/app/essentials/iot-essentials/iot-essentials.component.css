@@ -1,0 +1,123 @@
+.defender-subscribe {
+    display: flex;
+    flex-direction: row;
+    height: 87vh;
+    padding: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1607843137);
+    opacity: 1;
+}
+
+.defender-subscribe .partition-div {
+    flex: 1;
+    margin: 0 30px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1607843137);
+}
+
+.defender-subscribe .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.defender-subscribe .partition-div.right-content {
+    background: #fff;
+}
+
+.app-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.know-more-message {
+    color: #007e91;
+    font-size: 24px;
+}
+
+.video-help-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    vertical-align: middle;
+    background: url(/assets/images/video-purple.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.know-more-video-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 50px;
+}
+
+.defender-subscribe .partition-div.right-content .subscribe-msg {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+p {
+    margin: 0 0 10px;
+    line-height: 1.4em;
+}
+
+.defender-subscribe .partition-div.right-content .pilot-msg {
+    font-size: 24px;
+}
+
+.enable-btn {
+    position: relative;
+    padding: 5px 11px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #007e91;
+    border-color: #007e91;
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased
+}
+
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.ui-tipbox {
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    width: calc(100% - 28px);
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.ui-tipbox-notice {
+    background-color: #c7e5fc;
+    border-left: solid 6px #2096f3;
+}
+
+.ui-tipbox-icon {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.ui-tipbox-notice .ui-tipbox-icon {
+    background: url(/assets/images/info-24px.svg);
+}
+
+.defender-subscribe .partition-div.right-content .pilot-msg {
+    font-size: 24px;
+}
+
+.ui-tipbox .ui-tipbox-con {
+    padding: 15px 44px 11px;
+}

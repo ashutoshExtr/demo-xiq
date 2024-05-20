@@ -24,7 +24,13 @@
     "firebase": "^10.11.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.14.2",
+    "single-spa": ">=4.0.0",
+    "single-spa-angular": "^8.1.0",
+    "single-spa-css": "^2.0.0",
+    "ec1-prime-ng": "^1.0.2",
+    "en-angular": "0.1.15-dev.31",
+    "en-web-components": "0.1.15-dev.31"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.6",
